@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title >Sorting Visualizer</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css">
+
+
+    </head>
+
+    <body>
+
+        <div class="main_container">
+            <div class="header">
+                <h1>
+                    Sorting Visualizer
+                </h1>
+
+                <div class="array-inputs"> 
+                    <div class="input_field">
+                        <div class="field">
+                            <label for="array size">Size  <span style="visibility: hidden;">..</span></label>
+                            <input id="arr_size" class="slider" type="range" min=20 max=150 step=1 value = 140>
+                        </div>
+                        <div class="field">
+                            <label for="speed of the algorithm">Speed</label>
+                            <input id="algorithm_speed" class="slider" type="range" min=1 max=5 step=1 value=4>
+                        </div>
+                    </div>  
+                    
+                    <button id="array_generate">Generate New Array!</button>
+                    
+                </div>
+            </div>    
+            
+            
+            <div class="body">
+                <div class="center" id="divs_container"></div>
+            </div>
+            
+
+
+
+            <div class="footer">
+                <div class="algorithm">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button >Heap</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="./index.js"></script>  
+        <script src="./algorithms/bubble_sort.js"></script>
+        <script src="./algorithms/selection_sort.js"></script>
+        <script src="./algorithms/insertion_sort.js"></script>
+        <script src="./algorithms/merge_sort.js"></script>
+        <script src="./algorithms/quick_sort.js"></script>
+        <script src="./algorithms/heap_sort.js"></script>
+
+    </body>
+
+</html>
+
+
+
+
+
+
