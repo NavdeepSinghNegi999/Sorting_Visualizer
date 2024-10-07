@@ -197,4 +197,67 @@ label{
 }
 
 
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .main_container {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        grid-template-rows: 25vh 55vh 20vh;
+    }
+    #array_generate {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .array-inputs {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .input_field {
+        margin-top: 3%;
+    }
+
+    input[type="range"] {
+        width: 80%;
+    }
+
+    .algorithm {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #divs_container {
+        height: 60vh;
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+    .main_container {
+        grid-template-rows: 30vh 50vh 20vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .array-inputs {
+        grid-template-columns: 1fr;
+        padding-top: 3%;
+    }
+
+    .algorithm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #divs_container {
+        height: 50vh;
+    }
+}
+
 
