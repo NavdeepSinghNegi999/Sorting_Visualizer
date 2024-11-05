@@ -4,7 +4,7 @@
 Develop a one-page Sorting Visualizer website using HTML, CSS and JavaScript.
 
 
-## Demo
+## Live
 
 https://navdeepsinghnegi999.github.io/Sorting_Visualizer/
 
